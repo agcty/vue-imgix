@@ -3,12 +3,12 @@ import component from './vue-imgix.vue';
 import ImgixClient from "imgix-core-js";
 
 // install function executed by Vue.use()
-function install(Vue) {
+function install(Vue, options) {
   if (install.installed) return;
   install.installed = true;
   var imgixClient = new ImgixClient({
     //just a sample domain right now, in a real case scenario this should be retrieved somewhere
-    domain: "menuver.imgix.net"
+    domain: options.baseURL
     // Do not use signed URLs with `secureURLToken` on the client side,
     // as this would leak your token to the world. Signed URLs should
     // be generated on the server.
