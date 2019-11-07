@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "VueImgix",
+  name: "ImgixImg",
   props: {
     url: {
       type: String,

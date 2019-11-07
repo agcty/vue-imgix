@@ -1,5 +1,5 @@
 // Import vue component
-import component from './vue-imgix.vue';
+import component from './ImgixImg.vue';
 import ImgixClient from "imgix-core-js";
 
 // install function executed by Vue.use()
@@ -15,7 +15,7 @@ function install(Vue, options) {
   });
 
   Vue.prototype.$imgixClient = imgixClient;
-  Vue.component('VueImgix', component);
+  Vue.component('ImgixImg', component);
 }
 
 // Create module definition for Vue.use()
