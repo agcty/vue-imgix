@@ -1,10 +1,10 @@
 <template>
-  <img
-    :src="lqipEnabled ? imgObj.lqip : imgObj.src"
-    :data-src="imgObj.src"
-    :data-srcset="imgObj.dataSrcSet"
-    data-sizes="auto"
-  />
+    <img
+      :src="lqipEnabled ? imgObj.lqip : imgObj.src"
+      :data-src="imgObj.src"
+      :data-srcset="imgObj.dataSrcSet"
+      data-sizes="auto"
+    />
 </template>
 
 <script>
